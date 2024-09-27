@@ -1,0 +1,30 @@
+package fr.antonin.jpa;
+
+import java.util.UUID;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+/* @Table(name="STUDENT") */
+@Entity
+/* @NoArgsConstructor */
+@Getter @Setter @AllArgsConstructor
+public class Surf {
+    
+    /* When to use UUID: Distributed system or scaling systeme in general
+     * Because 1: if we add from another database that used the incremental: problem
+     * 2: When multiinstance, no need to wait to INSERT (1,2,3..) when can do in paralel 
+     */
+    @Id
+    @GeneratedValue(generator = "UUID")
+    @Setter(AccessLevel.PROTECTED)
+    private UUID id;
+
+    private String name;
+    private Double initialPrice;
+}
