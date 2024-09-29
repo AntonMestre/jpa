@@ -20,6 +20,6 @@ public class Store {
     @Setter(AccessLevel.PROTECTED)
     private UUID id;
 
-    @OneToMany
+    @OneToMany(mappedBy = "store")
     List<Surf> surfs;
 }
