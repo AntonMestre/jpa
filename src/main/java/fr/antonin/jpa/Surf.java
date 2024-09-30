@@ -32,5 +32,11 @@ public class Surf {
 
     @ManyToOne
     @JoinColumn(name = "store_id")
+    /* fetch = FetchType.LAZY; fetch = FetchType.EAGER -> might impact performance 
+     * 
+     * Default:
+     * @OneToMany @ManyToMany -> FetchType.LAZY
+     * @ManyToOne @OneToOne -> FetchType.EAGER
+    */
     private Store store;
 }
