@@ -21,6 +21,8 @@ public class Store {
     @Setter(AccessLevel.PROTECTED)
     private UUID id;
 
+    private String name;
+
     @OneToMany(mappedBy = "store")
     List<Surf> surfs;
 }
