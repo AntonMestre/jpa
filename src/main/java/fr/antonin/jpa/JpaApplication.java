@@ -6,9 +6,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class JpaApplication {
 
-	// TODO: Put in place a surf modelization
 	public static void main(String[] args) {
 		SpringApplication.run(JpaApplication.class, args);
+
+		
+
 	}
 
 }

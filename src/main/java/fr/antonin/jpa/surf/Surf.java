@@ -1,7 +1,8 @@
-package fr.antonin.jpa;
+package fr.antonin.jpa.surf;
 
 import java.util.UUID;
 
+import fr.antonin.jpa.store.Store;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
