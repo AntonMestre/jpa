@@ -1,4 +1,4 @@
-package fr.antonin.jpa.surf;
+package fr.antonin.jpa.store.surf;
 
 import java.util.UUID;
 
